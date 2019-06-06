@@ -13,11 +13,13 @@ class Template(object):
 	def __init__(self, args):
 		super(Template, self).__init__()
 		self.args = args
+		self.subscriber= rospy.Subscriber('/duckiebot/camera_node/image/raw', Image, self.callback)
 
 
 	#def publicar(self):
 
-	#def callback(self,msg):
+	def callback(self,msg):
+		pass
 
 	#def procesar_img(self, img):
 		# Cambiar espacio de color
@@ -42,7 +44,7 @@ def main():
 
 	#objeto.publicar() #llama al metodo publicar del objeto obj de tipo Template
 
-	#rospy.spin() #funcion de ROS que evita que el programa termine -  se debe usar en  Subscribers
+	rospy.spin() #funcion de ROS que evita que el programa termine -  se debe usar en  Subscribers
 
 
 if __name__ =='__main__':

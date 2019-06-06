@@ -33,7 +33,7 @@ class Control(object):
 
 
 def main():
-	rospy.init_node('test1') #creacion y registro del nodo!
+	rospy.init_node('test') #creacion y registro del nodo!
 
 	obj = Control('args') # Crea un objeto del tipo Template, cuya definicion se encuentra arriba
 
