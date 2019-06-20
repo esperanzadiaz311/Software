@@ -36,8 +36,4 @@
         <arg name="veh" value="$(arg veh)"/>
     </include>
 
-	<!-- Camera -->
- <!-- this should possible change later when we take logs without camera info but let's leave for now -->
-    <arg name="live" value="$(arg live)"/>
-  </include>
 </launch>
